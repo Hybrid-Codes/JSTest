@@ -1,18 +1,31 @@
-let count = 0;
-let displayCount = document.getElementById("count")
-let countIncrease = documentGetElementById("increase")
-let countDecrease = documentGetElementById("decrease")
-let reset = documentGetElementById("reset")
+window.onload =function() {
+    let count = 0;
+    let displayCount = document.getElementById("count");
+    let countIncrease = document.getElementById("increase");
+    let countDecrease = document.getElementById("decrease");
+    let reset = document.getElementById("reset");
 
-function Increment () {
+    updateDisplay();
+
+countIncrease.addEventListener("click",()=>{
     count++;
-}
+    updateDisplay();
+}) ;
 
-function Decrement () {
+countDecrease.addEventListener("click",()=>{
     count--;
-}
+    updateDisplay();
+}) ;
 
-function Reset () {
+reset.addEventListener("click",()=>{
     count = 0;
+    updateDisplay();
+}) ;
+
+function updateDisplay(){
+    displayCount.innerHTML = count;
 }
+};
+
+
 
