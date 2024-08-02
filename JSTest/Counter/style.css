@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+button {
+	height: 50px;
+	width: 200px;
+	background-color: black;
+	color: white;
+	border-radius: 50px;
+	outline: none;
+	font-size: 40px;
+	cursor: pointer;
+}

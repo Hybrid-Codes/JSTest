@@ -7,24 +7,24 @@ window.onload =function() {
 
     updateDisplay();
 
-countIncrease.addEventListener("click",()=>{
-    count++;
-    updateDisplay();
-}) ;
+    countIncrease.addEventListener("click",()=>{
+        count++;
+        updateDisplay();
+    }) ;
 
-countDecrease.addEventListener("click",()=>{
-    count--;
-    updateDisplay();
-}) ;
+    countDecrease.addEventListener("click",()=>{
+        count--;
+        updateDisplay();
+    }) ;
 
-reset.addEventListener("click",()=>{
-    count = 0;
-    updateDisplay();
-}) ;
+    reset.addEventListener("click",()=>{
+        count = 0;
+        updateDisplay();
+    }) ;
 
-function updateDisplay(){
-    displayCount.innerHTML = count;
-}
+    function updateDisplay(){
+        displayCount.innerHTML = count;
+    }
 };
 
 
